@@ -63,7 +63,6 @@ class _HomeScreenState extends State<HomeScreen>
         drawer: CustomDrawer(),
         body: TabBarView(
           children: [
-
             TinderCardsType(),
             InstagramType(),
             NetflixBottomBar(),
