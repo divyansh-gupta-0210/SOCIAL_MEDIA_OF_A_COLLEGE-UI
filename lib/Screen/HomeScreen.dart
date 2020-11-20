@@ -1,5 +1,5 @@
 import 'package:connect_gitam/Widgets/InstagramType.dart';
-import 'package:connect_gitam/Widgets/NetflixBottomBar.dart';
+import 'package:connect_gitam/Widgets/NetflixTab.dart';
 import 'package:connect_gitam/Widgets/TinderCardsType.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

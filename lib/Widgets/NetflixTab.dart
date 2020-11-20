@@ -1,3 +1,4 @@
+import 'package:connect_gitam/Screen/NetflixScreen.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -14,18 +15,7 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
         color: Colors.white,
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              children: <Widget>[
-                Text(
-                  "This is Netflix App",
-                  style: TextStyle(fontSize: 25.0, color: Colors.black),
-                ),
-              ],
-            ),
-          ),
-        ),
+        child: NetflixScreen(),
       ),
       bottomNavigationBar: CurvedNavigationBar(
         color: Theme.of(context).primaryColor,
@@ -50,18 +40,3 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
   }
 }
 
-// child: Align(
-// alignment: FractionalOffset.bottomCenter,
-// child: Scaffold(
-// bottomNavigationBar: CurvedNavigationBar(
-// items: <Widget>[
-// Icon(Icons.home, size: 20, color: Colors.black,),
-// Icon(Icons.favorite, size: 20, color: Colors.black,),
-// Icon(Icons.account_circle, size: 20, color: Colors.black,)
-// ],
-// onTap: (index){
-// debugPrint('Current Index Is $index');
-// },
-// ),
-// ),
-// ),

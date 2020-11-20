@@ -23,6 +23,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_tindercard: ^0.2.0
   foldable_sidebar: ^1.0.0
+  video_player: ^1.0.1
+  flutter_bloc: ^6.1.1
 
 dev_dependencies:
   flutter_test:
