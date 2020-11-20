@@ -11,13 +11,13 @@ class HomeScreen extends StatefulWidget {
 }
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  TabController _controller;
   PageController _pageController;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _controller = TabController(length: 3, vsync: this);
     _pageController = PageController(initialPage: 0, viewportFraction: 0.8);
   }
 
@@ -42,6 +42,9 @@ class _HomeScreenState extends State<HomeScreen>
           ),
           bottom: TabBar(
             // controller: _tabController,
+            onTap: (index){
+              _controller.index = _controller.previousIndex;
+            },
             indicatorWeight: 3.0,
             labelColor: Theme.of(context).primaryColor,
             labelStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
@@ -63,10 +66,10 @@ class _HomeScreenState extends State<HomeScreen>
         drawer: CustomDrawer(),
         body: TabBarView(
           children: [
+
             TinderCardsType(),
             InstagramType(),
             NetflixBottomBar(),
-
           ],
         ),
       ),

@@ -32,6 +32,9 @@ class _TinderCardsTypeState extends State<TinderCardsType>
             Container(
               height: MediaQuery.of(context).size.height * 0.6,
               child: TinderSwapCard(
+                swipeUp: false,
+                swipeDown: false,
+
                 orientation: AmassOrientation.RIGHT,
                 totalNum: 6,
                 stackNum: 3,
