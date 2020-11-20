@@ -39,6 +39,7 @@ class _NetflixScreenState extends State<NetflixScreen> {
         Container(
           child: Column(
             children: [
+
               // CustomScrollView(
               //   controller: _scrollController,
               //   slivers: [
