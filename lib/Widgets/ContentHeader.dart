@@ -1,9 +1,9 @@
-import 'package:connect_gitam/Netflix/NetflixVerticalIconButton.dart';
+
 import 'package:connect_gitam/models/models.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Netflix/NetflixTab.dart';
 import 'NetflixAppBar.dart';
+import 'NetflixVerticalIconButton.dart';
 
 
 class ContentHeader extends StatelessWidget {

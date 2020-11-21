@@ -1,7 +1,6 @@
 import 'package:connect_gitam/Screen/NetflixScreen.dart';
 import 'package:connect_gitam/Screen/Sample.dart';
-import 'package:connect_gitam/Screen/Search.dart';
-import '../Netflix/NetflixAppBar.dart';
+import 'package:connect_gitam/Screen/SearchNetflix.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,6 @@ class NetflixBottomBar extends StatefulWidget {
 }
 
 class _NetflixBottomBarState extends State<NetflixBottomBar> {
-
   ScrollController _scrollController;
   double _scrollOffSet = 0.0;
 
@@ -44,16 +42,27 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
         buttonBackgroundColor: Theme.of(context).primaryColor,
         height: 48,
         items: <Widget>[
-          Icon(Icons.search, size: 24, color: Colors.black),
+          // GestureDetector(
+          //   onTap: () => Navigator.push(this.context,
+          //       MaterialPageRoute(builder: (context) => SearchNetflix())),
+          //   child: Icon(
+          //     Icons.search,
+          //     size: 24,
+          //     color: Colors.black,
+          //   ),
+          // ),
+          IconButton(
+            icon: Icon(Icons.search),
+            iconSize: 24,
+            onPressed: () => Navigator.push(this.context,
+                    MaterialPageRoute(builder: (context) => SearchNetflix())),
+            color: Colors.black,
+          ),
           Icon(Icons.home, size: 24, color: Colors.black),
           Icon(Icons.favorite, size: 24, color: Colors.black)
         ],
         onTap: (index) {
-          // debugPrint('Current Index Is $index');
-          // if(index==2)
-          //   Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Sample()));
-          if(index==0)
-            Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Search()));
+          debugPrint('Current Index Is $index');
         },
         animationDuration: Duration(
           milliseconds: 200,

@@ -1,3 +1,4 @@
+import 'package:connect_gitam/Screen/SearchNetflix.dart';
 import 'package:connect_gitam/models/models.dart';
 import 'package:flutter/material.dart';
 

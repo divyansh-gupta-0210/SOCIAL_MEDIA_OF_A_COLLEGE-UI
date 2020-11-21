@@ -1,5 +1,5 @@
 import 'package:connect_gitam/Widgets/InstagramType.dart';
-import '../Netflix/NetflixTab.dart';
+import 'package:connect_gitam/Widgets/NetflixTab.dart';
 import 'package:connect_gitam/Widgets/TinderCardsType.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -12,13 +12,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   TabController _controller;
-  PageController _pageController;
 
   @override
   void initState() {
     super.initState();
     _controller = TabController(length: 3, vsync: this);
-    _pageController = PageController(initialPage: 0, viewportFraction: 0.8);
   }
 
   @override

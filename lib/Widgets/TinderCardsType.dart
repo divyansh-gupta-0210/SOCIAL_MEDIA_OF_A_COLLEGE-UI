@@ -1,4 +1,3 @@
-import 'package:connect_gitam/Netflix/NetflixTab.dart';
 import 'package:connect_gitam/Screen/Sample.dart';
 import 'package:connect_gitam/Widgets/Custom_Drawer.dart';
 import 'package:connect_gitam/Widgets/TinderButtomButton.dart';

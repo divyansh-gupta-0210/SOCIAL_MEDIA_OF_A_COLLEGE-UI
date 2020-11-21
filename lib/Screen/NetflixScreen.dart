@@ -1,7 +1,6 @@
-import '../Netflix/ContentHeader.dart';
-import '../Netflix/ContentLists.dart';
-import '../Netflix/NetflixAppBar.dart';
-import '../Netflix/Previews.dart';
+import 'package:connect_gitam/Widgets/ContentHeader.dart';
+import 'package:connect_gitam/Widgets/ContentLists.dart';
+import 'package:connect_gitam/Widgets/Previews.dart';
 import 'package:connect_gitam/data/netflixdata.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
