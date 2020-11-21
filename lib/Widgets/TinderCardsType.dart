@@ -1,3 +1,5 @@
+import 'package:connect_gitam/Netflix/NetflixTab.dart';
+import 'package:connect_gitam/Screen/Sample.dart';
 import 'package:connect_gitam/Widgets/Custom_Drawer.dart';
 import 'package:connect_gitam/Widgets/TinderButtomButton.dart';
 import 'package:flutter/animation.dart';
@@ -93,6 +95,22 @@ class _TinderCardsTypeState extends State<TinderCardsType>
                   ),
                   elevation: 10,
                 ),
+                cardController: controller = CardController(),
+                swipeUpdateCallback:
+                (DragUpdateDetails details, Alignment align) {
+                  /// Get swiping card's alignment
+                  if (align.x < 0) {
+                    //Card is LEFT swiping
+                    Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Sample()));
+                  } else if (align.x > 0) {
+                    //Card is RIGHT swiping
+                  }
+                },
+
+                swipeCompleteCallback:
+                    (CardSwipeOrientation orientation, int index) {
+                  /// Get orientation & index of swiped card!
+                },
               ),
             ),
             SizedBox(height: 25,),

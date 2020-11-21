@@ -1,7 +1,7 @@
-import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/ContentHeader.dart';
-import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/ContentLists.dart';
-import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/NetflixAppBar.dart';
-import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/Previews.dart';
+import '../Netflix/ContentHeader.dart';
+import '../Netflix/ContentLists.dart';
+import '../Netflix/NetflixAppBar.dart';
+import '../Netflix/Previews.dart';
 import 'package:connect_gitam/data/netflixdata.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

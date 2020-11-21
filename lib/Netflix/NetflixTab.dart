@@ -1,5 +1,7 @@
 import 'package:connect_gitam/Screen/NetflixScreen.dart';
-import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/NetflixAppBar.dart';
+import 'package:connect_gitam/Screen/Sample.dart';
+import 'package:connect_gitam/Screen/Search.dart';
+import '../Netflix/NetflixAppBar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +49,11 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
           Icon(Icons.favorite, size: 24, color: Colors.black)
         ],
         onTap: (index) {
-          debugPrint('Current Index Is $index');
+          // debugPrint('Current Index Is $index');
+          // if(index==2)
+          //   Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Sample()));
+          if(index==0)
+            Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Search()));
         },
         animationDuration: Duration(
           milliseconds: 200,
