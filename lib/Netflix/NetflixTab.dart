@@ -1,5 +1,5 @@
 import 'package:connect_gitam/Screen/NetflixScreen.dart';
-import 'package:connect_gitam/Widgets/NetflixAppBar.dart';
+import 'file:///C:/Users/omen/AndroidStudioProjects/flutter_social_ui_starter/flutter_social_ui/lib/Netflix/NetflixAppBar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       // extendBodyBehindAppBar: true  ,
       body: NetflixScreen(),
       bottomNavigationBar: CurvedNavigationBar(

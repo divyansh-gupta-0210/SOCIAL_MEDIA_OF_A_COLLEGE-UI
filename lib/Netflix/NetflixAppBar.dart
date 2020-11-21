@@ -40,13 +40,13 @@ class _NetflixAppBarState extends State<NetflixAppBar> {
                   }
                 ),
                 _AppBarButton(
-                  title: 'MOVIES',
+                  title: 'MAP',
                   onTap: () {
                     print("MOVIES");
                   },
                 ),
                 _AppBarButton(
-                  title: 'MY LIST',
+                  title: 'COURSES',
                   onTap: () {
                     print("MY LIST");
                   },
