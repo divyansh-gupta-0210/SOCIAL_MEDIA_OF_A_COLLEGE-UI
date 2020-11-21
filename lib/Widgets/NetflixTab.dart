@@ -1,4 +1,5 @@
 import 'package:connect_gitam/Screen/NetflixScreen.dart';
+import 'package:connect_gitam/Widgets/NetflixAppBar.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -8,15 +9,33 @@ class NetflixBottomBar extends StatefulWidget {
 }
 
 class _NetflixBottomBarState extends State<NetflixBottomBar> {
+
+  ScrollController _scrollController;
+  double _scrollOffSet = 0.0;
+
+  @override
+  void initState() {
+    _scrollController = ScrollController()
+      ..addListener(() {
+        setState(() {
+          _scrollOffSet = _scrollController.offset;
+        });
+      });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Colors.white,
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: NetflixScreen(),
-      ),
+      backgroundColor: Colors.white,
+      // extendBodyBehindAppBar: true  ,
+      body: NetflixScreen(),
       bottomNavigationBar: CurvedNavigationBar(
         color: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
@@ -39,4 +58,3 @@ class _NetflixBottomBarState extends State<NetflixBottomBar> {
     );
   }
 }
-

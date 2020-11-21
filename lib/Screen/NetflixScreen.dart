@@ -1,5 +1,7 @@
-import 'package:connect_gitam/Widgets/Assests.dart';
+
+import 'package:connect_gitam/Widgets/ContentHeader.dart';
 import 'package:connect_gitam/Widgets/NetflixAppBar.dart';
+import 'package:connect_gitam/data/netflixdata.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -31,30 +33,14 @@ class _NetflixScreenState extends State<NetflixScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Positioned(
-        child: NetflixAppBar(_scrollOffSet),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          // NetflixAppBar(_scrollOffSet),
+          ContentHeader(featuredContent: sintelContent),
+          // Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),
+        ],
       ),
-        Container(
-          child: Column(
-            children: [
-
-              // CustomScrollView(
-              //   controller: _scrollController,
-              //   slivers: [
-              //     SliverToBoxAdapter(
-              //       child: Container(
-              //         height: 1000.0,
-              //         color: Colors.orange,
-              //       ),
-              //     )
-              //   ],
-              // ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }

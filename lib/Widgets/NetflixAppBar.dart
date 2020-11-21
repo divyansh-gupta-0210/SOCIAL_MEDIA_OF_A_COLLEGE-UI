@@ -34,21 +34,21 @@ class _NetflixAppBarState extends State<NetflixAppBar> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 _AppBarButton(
-                  title: 'TV SHOWS',
+                  title: 'CANTEENS',
                   onTap: () {
-                    print("TV SHOWS");
-                  },
+                    print("CANTEENS");
+                  }
                 ),
                 _AppBarButton(
                   title: 'MOVIES',
                   onTap: () {
-                    print("TV SHOWS");
+                    print("MOVIES");
                   },
                 ),
                 _AppBarButton(
                   title: 'MY LIST',
                   onTap: () {
-                    print("TV SHOWS");
+                    print("MY LIST");
                   },
                 ),
               ],
@@ -73,7 +73,7 @@ class _AppBarButton extends StatelessWidget {
       child: Text(
         title,
         style: TextStyle(
-            color: Colors.black, fontSize: 16.0, fontWeight: FontWeight.w600),
+            color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.w600),
       ),
     );
   }
