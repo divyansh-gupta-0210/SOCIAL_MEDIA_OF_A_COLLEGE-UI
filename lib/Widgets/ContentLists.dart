@@ -1,4 +1,4 @@
-import 'package:connect_gitam/Screen/SearchNetflix.dart';
+import 'package:connect_gitam/Screen/NetflixLandingScreen.dart';
 import 'package:connect_gitam/models/models.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +42,8 @@ class ContentLists extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 final Content content = contentLists[index];
                 return GestureDetector(
-                  onTap: () => print(content.name),
+                  onTap: () =>   Navigator.push(context, MaterialPageRoute(builder: (context) => NetflixLandingImage(content.name, content.imageUrl, content.description))),
+                      // print(content.name),
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 8.0),
                     height: isOriginals ? 400.0 : 200.0,

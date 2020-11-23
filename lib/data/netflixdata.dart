@@ -74,41 +74,191 @@ final List<Content> previews = const [
   ),
 ];
 
-final List<Content> myList = const [
-  Content(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Content(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Content(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
-  Content(name: 'Violet Evergarden', imageUrl: Assets.violetEvergarden),
-  Content(name: 'How to Sell Drugs Online (Fast)', imageUrl: Assets.htsdof),
-  Content(name: 'Kakegurui', imageUrl: Assets.kakegurui),
-  Content(name: 'Carole and Tuesday', imageUrl: Assets.caroleAndTuesday),
-  Content(name: 'Black Mirror', imageUrl: Assets.blackMirror),
+final List<Content> myList = [
+  Content(
+    name: 'Violet Evergarden',
+    imageUrl: Assets.violetEvergarden,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'How to Sell Drugs Online (Fast)',
+    imageUrl: Assets.htsdof,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Kakegurui',
+    imageUrl: Assets.kakegurui,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Carole and Tuesday',
+    imageUrl: Assets.caroleAndTuesday,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: Assets.blackMirror,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Violet Evergarden',
+    imageUrl: Assets.violetEvergarden,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'How to Sell Drugs Online (Fast)',
+    imageUrl: Assets.htsdof,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Kakegurui',
+    imageUrl: Assets.kakegurui,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Carole and Tuesday',
+    imageUrl: Assets.caroleAndTuesday,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Black Mirror',
+    imageUrl: Assets.blackMirror,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
 ];
 
-final List<Content> originals = const [
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Content(name: 'The Witcher', imageUrl: Assets.witcher),
-  Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
-  Content(name: 'Stranger Things', imageUrl: Assets.strangerThings),
-  Content(name: 'The Witcher', imageUrl: Assets.witcher),
-  Content(name: 'The Umbrella Academy', imageUrl: Assets.umbrellaAcademy),
-  Content(name: '13 Reasons Why', imageUrl: Assets.thirteenReasonsWhy),
-  Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
+final List<Content> originals = [
+  Content(
+    name: 'Stranger Things',
+    imageUrl: Assets.strangerThings,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Witcher',
+    imageUrl: Assets.witcher,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: Assets.umbrellaAcademy,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: '13 Reasons Why',
+    imageUrl: Assets.thirteenReasonsWhy,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The End of the F***ing World',
+    imageUrl: Assets.teotfw,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Stranger Things',
+    imageUrl: Assets.strangerThings,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Witcher',
+    imageUrl: Assets.witcher,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Umbrella Academy',
+    imageUrl: Assets.umbrellaAcademy,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: '13 Reasons Why',
+    imageUrl: Assets.thirteenReasonsWhy,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The End of the F***ing World',
+    imageUrl: Assets.teotfw,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
 ];
 
-final List<Content> trending = const [
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Content(name: 'The Crown', imageUrl: Assets.crown),
-  Content(name: 'Dogs', imageUrl: Assets.dogs),
-  Content(name: 'Explained', imageUrl: Assets.explained),
-  Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
-  Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
-  Content(name: 'The Crown', imageUrl: Assets.crown),
-  Content(name: 'Dogs', imageUrl: Assets.dogs),
+final List<Content> trending = [
+  Content(
+    name: 'Explained',
+    imageUrl: Assets.explained,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Avatar The Last Airbender',
+    imageUrl: Assets.atla,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Tiger King',
+    imageUrl: Assets.tigerKing,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Crown',
+    imageUrl: Assets.crown,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Dogs',
+    imageUrl: Assets.dogs,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Explained',
+    imageUrl: Assets.explained,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Avatar The Last Airbender',
+    imageUrl: Assets.atla,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Tiger King',
+    imageUrl: Assets.tigerKing,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'The Crown',
+    imageUrl: Assets.crown,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
+  Content(
+    name: 'Dogs',
+    imageUrl: Assets.dogs,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
+  ),
 ];
