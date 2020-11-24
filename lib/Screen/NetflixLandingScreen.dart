@@ -1,3 +1,4 @@
+import 'package:connect_gitam/Screen/HomeScreen.dart';
 import 'package:connect_gitam/Widgets/NetflixMainScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 3),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
@@ -96,7 +97,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(5, 25, 5, 0),
+                      padding: EdgeInsets.fromLTRB(5, 20, 5, 0),
                       child: Container(
                         height: 100,
                         child: Text(
@@ -119,7 +120,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                                 color: Colors.white,
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
+                                padding: const EdgeInsets.only(top: 5.0),
                                 child: Text(
                                   'Website',
                                   style: TextStyle(color: Colors.white),
@@ -148,9 +149,12 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                         ),
                       ],
                     ),
-                    // Divider(
-                    //   color: Colors.grey.shade500,
-                    // )
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Divider(
+                      color: Colors.grey.shade500,
+                    )
                   ],
                 ),
                 decoration: BoxDecoration(
@@ -166,14 +170,9 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
             expandedHeight: 600.0,
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => NetflixMainScreen()));
-              },
+              onPressed: () => Navigator.pop(context),
             ),
-          )
+          ),
         ],
       ),
     );

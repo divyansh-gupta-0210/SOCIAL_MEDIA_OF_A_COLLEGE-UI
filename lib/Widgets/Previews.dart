@@ -26,7 +26,7 @@ class Previews extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 0.5),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(7),
             ),
             height: 156,

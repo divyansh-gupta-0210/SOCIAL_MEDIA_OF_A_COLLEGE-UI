@@ -17,32 +17,32 @@ class _NetflixMainScreenState extends State<NetflixMainScreen> {
       // backgroundColor: Colors.white,
       extendBodyBehindAppBar: true  ,
       body: NetflixScreen(),
-      bottomNavigationBar: CurvedNavigationBar(
-        color: Theme.of(context).primaryColor,
-        backgroundColor: Colors.white,
-        buttonBackgroundColor: Theme.of(context).primaryColor,
-        height: 48,
-        items: <Widget>[
-          Icon(Icons.search, size: 24, color: Colors.black),
-          Icon(Icons.home, size: 24, color: Colors.black),
-          Icon(Icons.favorite, size: 24, color: Colors.black)
-        ],
-        onTap: (index) {
-          if (index == 0) {
-            Navigator.push(this.context,
-                MaterialPageRoute(builder: (context) => SearchNetflix()));
-          }
-          else if (index==2){
-            Navigator.push(this.context,
-                MaterialPageRoute(builder: (context) => SearchNetflix()));
-          }
-        },
-        animationDuration: Duration(
-          milliseconds: 200,
-        ),
-        index: 1,
-        animationCurve: Curves.bounceInOut,
-      ),
+      // bottomNavigationBar: CurvedNavigationBar(
+      //   color: Theme.of(context).primaryColor,
+      //   backgroundColor: Colors.white,
+      //   buttonBackgroundColor: Theme.of(context).primaryColor,
+      //   height: 48,
+      //   items: <Widget>[
+      //     Icon(Icons.search, size: 24, color: Colors.black),
+      //     Icon(Icons.home, size: 24, color: Colors.black),
+      //     Icon(Icons.favorite, size: 24, color: Colors.black)
+      //   ],
+      //   onTap: (index) {
+      //     if (index == 0) {
+      //       Navigator.push(this.context,
+      //           MaterialPageRoute(builder: (context) => SearchNetflix()));
+      //     }
+      //     else if (index==2){
+      //       Navigator.push(this.context,
+      //           MaterialPageRoute(builder: (context) => SearchNetflix()));
+      //     }
+      //   },
+      //   animationDuration: Duration(
+      //     milliseconds: 200,
+      //   ),
+      //   index: 1,
+      //   animationCurve: Curves.bounceInOut,
+      // ),
     );
   }
 }
