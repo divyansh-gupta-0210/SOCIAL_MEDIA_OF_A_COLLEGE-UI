@@ -16,9 +16,6 @@ class NetflixLandingImage extends StatefulWidget {
 
 class _NetflixLandingImageState extends State<NetflixLandingImage> {
 
-
-
-
   _buildRestaurants() {
     List<Widget> restaurantList = [];
     restaurants.forEach(
@@ -26,70 +23,64 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
         restaurantList.add(
           GestureDetector(
             onTap: () {},
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(10.0),
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.grey, blurRadius: 2.0, spreadRadius: 1.0),
-                ],
-              ),
-              child: Row(
-                children: <Widget>[
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(13.0),
-                    child: Image(
-                      image: AssetImage(restaurant.imageUrlRestaurant),
-                      height: 100.0,
-                      width: 100,
-                      fit: BoxFit.cover,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Container(
+                margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(10.0),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black, blurRadius: 2.0, spreadRadius: 1.0),
+                  ],
+                ),
+                child: Row(
+                  children: <Widget>[
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(13.0),
+                      child: Image(
+                        image: AssetImage(restaurant.imageUrlRestaurant),
+                        height: 80.0,
+                        width: 150,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(12.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          restaurant.name,
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        Text(
-                          restaurant.address,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        SizedBox(
-                          height: 4,
-                        ),
-                        Text(
-                          '0.2 miles away',
-                          style: TextStyle(
-                              fontSize: 16.0, color: Colors.white,fontWeight: FontWeight.w600),
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ],
+                    SizedBox(
+                      width: 5,
                     ),
-                  )
-                ],
+                    Container(
+                      margin: EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            restaurant.name,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            restaurant.address,
+                            style: TextStyle(
+                              fontSize: 12.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -100,7 +91,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
     return Column(children: restaurantList);
   }
 
-  final generatedList = List.generate(30, (index) => 'Item $index');
+  // final generatedList = List.generate(30, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
@@ -257,14 +248,14 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                 ),
               ),
             ),
-            expandedHeight: 600.0,
+            expandedHeight: MediaQuery.of(context).size.height/1.42,
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.pop(context),
             ),
           ),
           SliverFixedExtentList(
-            itemExtent: 850.0,
+            itemExtent: MediaQuery.of(context).size.height*1.32,
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index)  {
                 if (index>0)

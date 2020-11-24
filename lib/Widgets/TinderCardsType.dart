@@ -108,7 +108,7 @@ class _TinderCardsTypeState extends State<TinderCardsType>
 
                 swipeCompleteCallback:
                     (CardSwipeOrientation orientation, int index) {
-                  /// Get orientation & index of swiped card!
+                  // Get orientation & index of swiped card!
                 },
               ),
             ),
@@ -117,7 +117,7 @@ class _TinderCardsTypeState extends State<TinderCardsType>
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 // FoldableSidebarBuilder(
-                //     status: null, drawer: CustomDrawer(), screenContents: null),
+                //     status: null, drawer: CustomDrawer(), screenContents: TinderCardsType()),
                 FloatingActionButton(
                   onPressed: () {},
                   backgroundColor: Colors.blue,

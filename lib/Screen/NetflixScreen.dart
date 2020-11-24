@@ -14,10 +14,10 @@ class NetflixScreen extends StatefulWidget {
 }
 
 class _NetflixScreenState extends State<NetflixScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
@@ -27,7 +27,10 @@ class _NetflixScreenState extends State<NetflixScreen> {
             SizedBox(height: 10),
             Previews(title: 'Previews', contentLists: previews),
             ContentLists(title: 'My List', contentLists: myList),
-            ContentLists(title: 'Netflix Originals', contentLists: originals, isOriginals: true),
+            ContentLists(
+                title: 'Netflix Originals',
+                contentLists: originals,
+                isOriginals: true),
             ContentLists(title: 'Trending', contentLists: trending),
             // Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),Text('Hi'),
           ],
@@ -47,10 +50,11 @@ class _NetflixScreenState extends State<NetflixScreen> {
           if (index == 0) {
             Navigator.push(this.context,
                 MaterialPageRoute(builder: (context) => Search()));
-          }
-          else if (index==2){
+            index = 1;
+          } else if (index == 2) {
             Navigator.push(this.context,
                 MaterialPageRoute(builder: (context) => Search()));
+            index = 1;
           }
         },
         animationDuration: Duration(
