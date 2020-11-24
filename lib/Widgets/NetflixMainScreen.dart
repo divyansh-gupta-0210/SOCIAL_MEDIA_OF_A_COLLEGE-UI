@@ -1,5 +1,4 @@
 import 'package:connect_gitam/Screen/NetflixScreen.dart';
-import 'package:connect_gitam/Screen/SearchNetflix.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 

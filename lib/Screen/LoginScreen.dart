@@ -70,8 +70,8 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 40.0,
               ),
-              GestureDetector(
-                onTap: () => Navigator.pushReplacement(
+              FlatButton(
+                onPressed: () => Navigator.pushReplacement(
                     context, MaterialPageRoute(builder: (_) => HomeScreen())),
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 60.0),
@@ -89,6 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         fontSize: 22.0),
                   ),
                 ),
+                splashColor: Colors.blue[300],
               ),
               SizedBox(height: 10.0),
               Text('powered by DSC GITAM'),

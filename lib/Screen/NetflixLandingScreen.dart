@@ -1,5 +1,5 @@
-import 'package:connect_gitam/Screen/HomeScreen.dart';
-import 'package:connect_gitam/Widgets/NetflixMainScreen.dart';
+import 'package:connect_gitam/data/LandingScreenData.dart';
+import 'package:connect_gitam/models/restaurant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +15,82 @@ class NetflixLandingImage extends StatefulWidget {
 }
 
 class _NetflixLandingImageState extends State<NetflixLandingImage> {
+
+  final generatedList = List.generate(30, (index) => 'Item $index');
+
+
+  _buildRestaurants() {
+    List<Widget> restaurantList = [];
+    restaurants.forEach(
+      (Restaurant restaurant) {
+        restaurantList.add(
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10.0),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.grey, blurRadius: 2.0, spreadRadius: 1.0),
+                ],
+              ),
+              child: Row(
+                children: <Widget>[
+                  Image(
+                    image: AssetImage(restaurant.imageUrlRestaurant),
+                    height: 100.0,
+                    width: 100,
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(12.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          restaurant.name,
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          restaurant.address,
+                          style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          '0.2 miles away',
+                          style: TextStyle(
+                              fontSize: 16.0, fontWeight: FontWeight.w600),
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+
+    return Column(children: restaurantList);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -154,7 +230,9 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                     ),
                     Divider(
                       color: Colors.grey.shade500,
-                    )
+                    ),
+                    // ListView.builder(itemBuilder: null)
+                    // Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),
                   ],
                 ),
                 decoration: BoxDecoration(
@@ -171,6 +249,14 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.pop(context),
+            ),
+          ),
+          SliverFixedExtentList(
+            itemExtent: 850.0,
+            delegate: SliverChildBuilderDelegate(
+              (BuildContext context, int index)  {
+                return _buildRestaurants();
+              }
             ),
           ),
         ],

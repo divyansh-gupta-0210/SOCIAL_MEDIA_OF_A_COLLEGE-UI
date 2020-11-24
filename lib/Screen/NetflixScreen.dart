@@ -6,7 +6,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'SearchNetflix.dart';
+import 'Search.dart';
 
 class NetflixScreen extends StatefulWidget {
   @override
@@ -46,11 +46,11 @@ class _NetflixScreenState extends State<NetflixScreen> {
         onTap: (index) {
           if (index == 0) {
             Navigator.push(this.context,
-                MaterialPageRoute(builder: (context) => SearchNetflix()));
+                MaterialPageRoute(builder: (context) => Search()));
           }
           else if (index==2){
             Navigator.push(this.context,
-                MaterialPageRoute(builder: (context) => SearchNetflix()));
+                MaterialPageRoute(builder: (context) => Search()));
           }
         },
         animationDuration: Duration(
