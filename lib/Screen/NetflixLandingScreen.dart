@@ -15,7 +15,6 @@ class NetflixLandingImage extends StatefulWidget {
 }
 
 class _NetflixLandingImageState extends State<NetflixLandingImage> {
-
   _buildRestaurants() {
     List<Widget> restaurantList = [];
     restaurants.forEach(
@@ -32,7 +31,9 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                   borderRadius: BorderRadius.circular(10.0),
                   boxShadow: [
                     BoxShadow(
-                        color: Colors.black, blurRadius: 2.0, spreadRadius: 1.0),
+                        color: Colors.black,
+                        blurRadius: 2.0,
+                        spreadRadius: 1.0),
                   ],
                 ),
                 child: Row(
@@ -91,15 +92,14 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
     return Column(children: restaurantList);
   }
 
-  // final generatedList = List.generate(30, (index) => 'Item $index');
+  final generatedList = List.generate(30, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       body: CustomScrollView(
-        shrinkWrap: true,
-        slivers: [
+        slivers: <Widget>[
           SliverAppBar(
             flexibleSpace: FlexibleSpaceBar(
               background: Container(
@@ -231,9 +231,6 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                     SizedBox(
                       height: 10,
                     ),
-                    Divider(
-                      color: Colors.grey.shade500,
-                    ),
                     // ListView.builder(itemBuilder: null)
                     // Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),Text('hi'),
                   ],
@@ -248,18 +245,56 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                 ),
               ),
             ),
-            expandedHeight: MediaQuery.of(context).size.height/1.42,
+            expandedHeight: MediaQuery.of(context).size.height / 1.42,
             leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.pop(context),
             ),
           ),
           SliverFixedExtentList(
-            itemExtent: MediaQuery.of(context).size.height*1.32,
+            itemExtent: 0.5,
+            delegate: SliverChildListDelegate(
+              [
+                Container(
+                  color: Colors.grey.shade500,
+                  height: 1.0,
+                ),
+              ],
+            ),
+          ),
+          SliverFixedExtentList(
+            itemExtent: 50,
+            delegate: SliverChildListDelegate(
+              [
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 10.0),
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Center(
+                            child: Text(
+                              'Different Verticals in ' + widget.name,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w600),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SliverFixedExtentList(
+            itemExtent: MediaQuery.of(context).size.height * 1.32,
             delegate: SliverChildBuilderDelegate(
-              (BuildContext context, int index)  {
-                if (index>0)
-                  return null;
+              (BuildContext context, int index) {
+                if (index > 0) return null;
                 return _buildRestaurants();
               },
             ),

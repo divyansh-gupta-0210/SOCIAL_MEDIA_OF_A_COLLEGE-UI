@@ -24,6 +24,10 @@ class _NetflixScreenState extends State<NetflixScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ContentHeader(featuredContent: sintelContent),
+            Divider(
+              color: Colors.white,
+              height: 0.5,
+            ),
             SizedBox(height: 10),
             Previews(title: 'Previews', contentLists: previews),
             ContentLists(title: 'My List', contentLists: myList),
