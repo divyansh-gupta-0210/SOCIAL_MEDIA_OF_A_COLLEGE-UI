@@ -267,8 +267,10 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
             itemExtent: 850.0,
             delegate: SliverChildBuilderDelegate(
               (BuildContext context, int index)  {
+                if (index>0)
+                  return null;
                 return _buildRestaurants();
-              }
+              },
             ),
           ),
         ],
