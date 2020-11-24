@@ -16,7 +16,7 @@ class NetflixLandingImage extends StatefulWidget {
 
 class _NetflixLandingImageState extends State<NetflixLandingImage> {
 
-  // final generatedList = List.generate(30, (index) => 'Item $index');
+
 
 
   _buildRestaurants() {
@@ -29,7 +29,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black,
                 borderRadius: BorderRadius.circular(10.0),
                 boxShadow: [
                   BoxShadow(
@@ -38,10 +38,17 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
               ),
               child: Row(
                 children: <Widget>[
-                  Image(
-                    image: AssetImage(restaurant.imageUrlRestaurant),
-                    height: 100.0,
-                    width: 100,
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(13.0),
+                    child: Image(
+                      image: AssetImage(restaurant.imageUrlRestaurant),
+                      height: 100.0,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
                   ),
                   Container(
                     margin: EdgeInsets.all(12.0),
@@ -53,6 +60,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                           restaurant.name,
                           style: TextStyle(
                             fontSize: 20.0,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
                           overflow: TextOverflow.ellipsis,
@@ -64,6 +72,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                           restaurant.address,
                           style: TextStyle(
                             fontSize: 16.0,
+                            color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),
                           overflow: TextOverflow.ellipsis,
@@ -74,7 +83,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                         Text(
                           '0.2 miles away',
                           style: TextStyle(
-                              fontSize: 16.0, fontWeight: FontWeight.w600),
+                              fontSize: 16.0, color: Colors.white,fontWeight: FontWeight.w600),
                           overflow: TextOverflow.ellipsis,
                         ),
                       ],
@@ -90,6 +99,8 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
 
     return Column(children: restaurantList);
   }
+
+  final generatedList = List.generate(30, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
