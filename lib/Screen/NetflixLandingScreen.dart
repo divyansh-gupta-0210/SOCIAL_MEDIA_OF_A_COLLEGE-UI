@@ -16,7 +16,7 @@ class NetflixLandingImage extends StatefulWidget {
 
 class _NetflixLandingImageState extends State<NetflixLandingImage> {
 
-  final generatedList = List.generate(30, (index) => 'Item $index');
+  // final generatedList = List.generate(30, (index) => 'Item $index');
 
 
   _buildRestaurants() {
@@ -96,6 +96,7 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: CustomScrollView(
+        shrinkWrap: true,
         slivers: [
           SliverAppBar(
             flexibleSpace: FlexibleSpaceBar(
