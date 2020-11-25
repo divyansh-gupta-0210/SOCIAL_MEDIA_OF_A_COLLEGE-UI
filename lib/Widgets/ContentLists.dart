@@ -42,17 +42,25 @@ class ContentLists extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 final Content content = contentLists[index];
                 return GestureDetector(
-                  onTap: () =>   Navigator.push(context, MaterialPageRoute(builder: (context) => NetflixLandingImage(content.name, content.imageUrl, content.description))),
-                      // print(content.name),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NetflixLandingImage(
+                              content.name,
+                              content.imageUrl,
+                              content.description))),
+                  // print(content.name),
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 8.0),
                     height: isOriginals ? 400.0 : 200.0,
                     width: isOriginals ? 200.0 : 130.0,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                      image: AssetImage(content.imageUrl),
-                      fit: BoxFit.cover,
-                    )),
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                        image: AssetImage(content.imageUrl),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                 );
               },

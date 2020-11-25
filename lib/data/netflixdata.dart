@@ -17,60 +17,80 @@ final List<Content> previews = const [
     imageUrl: Assets.atla,
     color: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'The Crown',
     imageUrl: Assets.crown,
     color: Colors.red,
     titleImageUrl: Assets.crownTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
     color: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
     color: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
     color: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'Avatar The Last Airbender',
     imageUrl: Assets.atla,
     color: Colors.orange,
     titleImageUrl: Assets.atlaTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'The Crown',
     imageUrl: Assets.crown,
     color: Colors.red,
     titleImageUrl: Assets.crownTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'The Umbrella Academy',
     imageUrl: Assets.umbrellaAcademy,
     color: Colors.yellow,
     titleImageUrl: Assets.umbrellaAcademyTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'Carole and Tuesday',
     imageUrl: Assets.caroleAndTuesday,
     color: Colors.lightBlueAccent,
     titleImageUrl: Assets.caroleAndTuesdayTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
   Content(
     name: 'Black Mirror',
     imageUrl: Assets.blackMirror,
     color: Colors.green,
     titleImageUrl: Assets.blackMirrorTitle,
+    description:
+        'A lonely young woman, Sintel, helps and befriends a dragon,\nwhom she calls Scales. But when he is kidnapped by an adult\ndragon, Sintel decides to embark on a dangerous quest to find\nher lost friend Scales.',
   ),
 ];
 

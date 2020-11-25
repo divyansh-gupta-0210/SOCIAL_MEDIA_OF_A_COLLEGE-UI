@@ -3,6 +3,8 @@ import 'package:connect_gitam/models/restaurant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'MessageScreen.dart';
+
 class NetflixLandingImage extends StatefulWidget {
   final String name;
   final String imageUrl;
@@ -209,17 +211,18 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
                           ),
                         ),
                         MaterialButton(
-                          onPressed: null,
+                          onPressed: () => Navigator.push(this.context,
+                              MaterialPageRoute(builder: (context) => MessageScreen())),
                           child: Column(
                             children: [
                               Icon(
-                                Icons.share,
+                                Icons.chat,
                                 color: Colors.white,
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(top: 5.0),
                                 child: Text(
-                                  'Share',
+                                  'Chat',
                                   style: TextStyle(color: Colors.white),
                                 ),
                               )

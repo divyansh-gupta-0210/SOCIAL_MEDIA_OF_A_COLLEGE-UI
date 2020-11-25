@@ -1,3 +1,4 @@
+import 'package:connect_gitam/Screen/MessageScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:connect_gitam/Widgets/Following_Users.dart';
@@ -52,9 +53,10 @@ class _InstagramTypeState extends State<InstagramType> {
                   Center(
                     heightFactor: 0.65,
                     child: FloatingActionButton(
-                      onPressed: () {},
+                      onPressed: () => Navigator.push(this.context,
+                          MaterialPageRoute(builder: (context) => MessageScreen())),
                       backgroundColor: Colors.blue,
-                      child: Icon(Icons.thumb_up),
+                      child: Icon(Icons.chat),
                       elevation: 0.1,
                     ),
                   ),
