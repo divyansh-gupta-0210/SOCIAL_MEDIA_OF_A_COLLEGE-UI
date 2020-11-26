@@ -1,4 +1,6 @@
 import 'package:connect_gitam/Screen/MessageScreen.dart';
+import 'package:connect_gitam/Screen/Search.dart';
+import 'package:connect_gitam/data/netflixdata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:connect_gitam/Widgets/Following_Users.dart';
@@ -53,8 +55,10 @@ class _InstagramTypeState extends State<InstagramType> {
                   Center(
                     heightFactor: 0.65,
                     child: FloatingActionButton(
-                      onPressed: () => Navigator.push(this.context,
-                          MaterialPageRoute(builder: (context) => MessageScreen())),
+                      onPressed: () => Navigator.push(
+                          this.context,
+                          MaterialPageRoute(
+                              builder: (context) => MessageScreen())),
                       backgroundColor: Colors.blue,
                       child: Icon(Icons.chat),
                       elevation: 0.1,
@@ -68,7 +72,8 @@ class _InstagramTypeState extends State<InstagramType> {
                       children: [
                         IconButton(
                           icon: Icon(Icons.search),
-                          onPressed: () {},
+                          onPressed: () => showSearch(
+                              context: context, delegate: Datasearch()),
                         ),
                         SizedBox(
                           width: 60,
@@ -113,5 +118,74 @@ class BNBCustomPaint extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
     return false;
+  }
+}
+
+class Datasearch extends SearchDelegate<String> {
+  // ignore: non_constant_identifier_names
+  final List<String> name_movies = [];
+
+   names() {
+    for (var i = 0; i < originals.length; i++) {
+      name_movies.add(originals[i].name);
+    }
+    for (var i = 0; i < trending.length; i++) {
+      name_movies.add(trending[i].name);
+    }
+    return name_movies;
+  }
+
+  final List<String> recent = [];
+
+  // ignore: non_constant_identifier_names
+  recent_searched() {
+    for (var i = 0; i < originals.length; i++) {
+      recent.add(originals[i].name);
+    }
+    return recent;
+  }
+
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: Icon(Icons.clear),
+        onPressed: () {
+          query = ' ';
+        },
+      )
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: AnimatedIcon(
+        icon: AnimatedIcons.menu_arrow,
+        progress: transitionAnimation,
+      ),
+      onPressed: () {
+        close(context, null);
+      },
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    final suggestionList = query.isEmpty ? recent_searched() : names();
+
+    return ListView.builder(
+      itemBuilder: (context, index) => ListTile(
+        leading: Icon(Icons.location_city),
+        title: Text(suggestionList[index]),
+      ),
+      itemCount: 10,
+    );
   }
 }
