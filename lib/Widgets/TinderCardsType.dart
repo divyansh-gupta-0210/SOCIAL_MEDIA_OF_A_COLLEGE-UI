@@ -1,12 +1,15 @@
 import 'package:connect_gitam/Screen/Sample.dart';
-import 'package:connect_gitam/Widgets/Custom_Drawer.dart';
-import 'package:connect_gitam/Widgets/TinderButtomButton.dart';
-import 'package:flutter/animation.dart';
+import 'package:connect_gitam/data/netflixdata.dart';
+import 'package:connect_gitam/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
-import 'package:foldable_sidebar/foldable_sidebar.dart';
+import 'package:flutter/cupertino.dart';
 
 class TinderCardsType extends StatefulWidget {
+  final Content trending;
+
+  const TinderCardsType({Key key, this.trending}) : super(key: key);
+
   @override
   _TinderCardsTypeState createState() => _TinderCardsTypeState();
 }
@@ -22,6 +25,44 @@ class _TinderCardsTypeState extends State<TinderCardsType>
     'assets/images/user5.jpg'
   ];
 
+  List<String> image = [];
+
+  images() {
+    for (var i = 0; i < originals.length; i++) {
+      image.add(originals[i].imageUrl);
+    }
+    for (var i = 0; i < trending.length; i++) {
+      image.add(trending[i].imageUrl);
+    }
+
+    return image;
+  }
+
+  List<String> name_movies = [];
+
+  names() {
+    for (var i = 0; i < originals.length; i++) {
+      name_movies.add(originals[i].name);
+    }
+    for (var i = 0; i < trending.length; i++) {
+      name_movies.add(trending[i].name);
+    }
+    return name_movies;
+  }
+
+  List<String> description_movies = [];
+
+  description() {
+    for (var i = 0; i < originals.length; i++) {
+      description_movies.add(originals[i].description);
+    }
+    for (var i = 0; i < trending.length; i++) {
+      description_movies.add(trending[i].description);
+    }
+    return description_movies;
+  }
+
+
   @override
   Widget build(BuildContext context) {
     CardController controller;
@@ -35,9 +76,8 @@ class _TinderCardsTypeState extends State<TinderCardsType>
               child: TinderSwapCard(
                 swipeUp: false,
                 swipeDown: false,
-
                 orientation: AmassOrientation.RIGHT,
-                totalNum: 6,
+                totalNum: images().length,
                 stackNum: 3,
                 maxWidth: MediaQuery.of(context).size.width * 0.9,
                 maxHeight: MediaQuery.of(context).size.width * 1.5,
@@ -52,7 +92,7 @@ class _TinderCardsTypeState extends State<TinderCardsType>
                           height: 500,
                           width: 400,
                           image: AssetImage(
-                            '${welcomeImages[index]}',
+                            images()[index],
                           ),
                           fit: BoxFit.cover,
                         ),
@@ -78,12 +118,28 @@ class _TinderCardsTypeState extends State<TinderCardsType>
                                       fontSize: 17.0,
                                       fontWeight: FontWeight.w600),
                                 ),
-                                SizedBox(height: 20.0),
+                                Text(
+                                  names()[index],
+                                  style: TextStyle(
+                                      fontSize: 13.0,
+                                      fontWeight: FontWeight.w700),
+                                ),
+                                SizedBox(height: 10.0),
                                 Text(
                                   'EVENT BY',
                                   style: TextStyle(
                                       fontSize: 17.0,
                                       fontWeight: FontWeight.w600),
+                                ),
+                                Container(
+                                  width: 250,
+                                  child: Text(
+                                    description()[index],
+                                    style: TextStyle(
+                                        fontSize: 17.0,
+                                        fontWeight: FontWeight.w600),
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
                                 ),
                               ],
                             ),
@@ -96,23 +152,26 @@ class _TinderCardsTypeState extends State<TinderCardsType>
                 ),
                 cardController: controller = CardController(),
                 swipeUpdateCallback:
-                (DragUpdateDetails details, Alignment align) {
+                    (DragUpdateDetails details, Alignment align) {
                   /// Get swiping card's alignment
                   if (align.x < 0) {
                     //Card is LEFT swiping
-                    Navigator.push(this.context, MaterialPageRoute(builder: (context)=>Sample()));
+                    Navigator.push(this.context,
+                        MaterialPageRoute(builder: (context) => Sample(name: names() ,description: description())));
                   } else if (align.x > 0) {
                     //Card is RIGHT swiping
                   }
                 },
-
                 swipeCompleteCallback:
                     (CardSwipeOrientation orientation, int index) {
                   // Get orientation & index of swiped card!
+
                 },
               ),
             ),
-            SizedBox(height: 25,),
+            SizedBox(
+              height: 25,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

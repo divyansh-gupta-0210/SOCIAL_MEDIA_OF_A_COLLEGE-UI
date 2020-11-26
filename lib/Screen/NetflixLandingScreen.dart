@@ -2,7 +2,6 @@ import 'package:connect_gitam/data/LandingScreenData.dart';
 import 'package:connect_gitam/models/restaurant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'MessageScreen.dart';
 
 class NetflixLandingImage extends StatefulWidget {
@@ -94,7 +93,6 @@ class _NetflixLandingImageState extends State<NetflixLandingImage> {
     return Column(children: restaurantList);
   }
 
-  final generatedList = List.generate(30, (index) => 'Item $index');
 
   @override
   Widget build(BuildContext context) {
