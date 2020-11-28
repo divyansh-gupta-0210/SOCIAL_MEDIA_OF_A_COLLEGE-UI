@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "426702688494",
+    "firebase_url": "https://app-management-edc48.firebaseio.com",
+    "project_id": "app-management-edc48",
+    "storage_bucket": "app-management-edc48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426702688494:android:dfb6b1c8a2d9e18a7123ff",
+        "android_client_info": {
+          "package_name": "com.example.flutter_social_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426702688494-9hnq44gtgi8umkufc40vbud207698int.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoi_0H2R697QdRjEFLC1ctF8yPg1-i5rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426702688494-9hnq44gtgi8umkufc40vbud207698int.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
