@@ -7,6 +7,5 @@ class Restaurant {
     this.imageUrlRestaurant,
     this.name,
     this.address,
-
   });
 }

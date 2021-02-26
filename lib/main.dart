@@ -1,9 +1,8 @@
-
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:connect_gitam/Screen/HomeScreen.dart';
+import 'package:connect_gitam/Screen/LoginScreen.dart';
 import 'package:connect_gitam/Screen/MyScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'Screen/LoginScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: MyScreen(),
+      home: LoginScreen(),
     );
   }
 }

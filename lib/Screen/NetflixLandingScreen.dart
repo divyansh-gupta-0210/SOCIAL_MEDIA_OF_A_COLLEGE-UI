@@ -9,6 +9,7 @@ class NetflixLandingImage extends StatefulWidget {
   final String imageUrl;
   final String description;
 
+
   NetflixLandingImage(this.name, this.imageUrl, this.description);
 
   @override

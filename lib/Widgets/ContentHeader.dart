@@ -1,4 +1,3 @@
-
 import 'package:connect_gitam/models/models.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +29,6 @@ class ContentHeader extends StatelessWidget {
         NetflixAppBar(_scrollOffSet),
         Positioned(
           bottom: 150,
-          left: MediaQuery.of(context).size.width / 5,
           child: SizedBox(
             width: 250,
             child: Image.asset(featuredContent.titleImageUrl),
