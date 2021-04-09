@@ -1,6 +1,6 @@
-# flutter_social_ui
+# SOCIAL MEDIA APP
 
-A new Flutter project.
+An app that everyone aims of. A mixture of TINDER CARDS, 
 
 ## Getting Started
 
