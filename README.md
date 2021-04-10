@@ -1,6 +1,6 @@
 # SOCIAL MEDIA APP
 
-![Events](atla.jpg)
+![Events](http://url/to/atla.jpg)
 
 ## Getting Started
 
