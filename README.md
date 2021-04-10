@@ -1,6 +1,6 @@
 # SOCIAL MEDIA APP
 
-An app that everyone aims of. A mixture of TINDER CARDS, 
+https://drive.google.com/file/d/1sLQUfSeOkg4d86s5cDou9xE8UWuKmsWr/view?usp=drivesdk
 
 ## Getting Started
 
