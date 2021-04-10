@@ -1,6 +1,6 @@
 # SOCIAL MEDIA APP
 
-![Events](https://drive.google.com/uc?export=view&id=16GYbXgcGy4EDbAQcy08-RWqMcacZT4BP) ![Clubs](https://drive.google.com/uc?export=view&id=1fxRlZB456wEYROhaVxc8HKOynZq0yUFr)
+![Events](https://drive.google.com/file/d/1sLQUfSeOkg4d86s5cDou9xE8UWuKmsWr/view?usp=sharing) ![Clubs](https://drive.google.com/uc?export=view&id=1fxRlZB456wEYROhaVxc8HKOynZq0yUFr)
 
 ## Getting Started
 
