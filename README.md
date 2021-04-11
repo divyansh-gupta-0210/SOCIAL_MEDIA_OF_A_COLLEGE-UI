@@ -11,7 +11,10 @@ Every college has hundreds of clubs and all those clubs organise many events. So
 This tab has it!
 For students it is like tinder swipe cards, 
 If a person likes the event he would swipe it right, and a new page stating about the event event will show up.
-Similarly if the student doesn't like the event he would left swipe it and and next event would appear as a card
+Similarly if the student doesn't like the event he would left swipe it and and next event would appear as a card.
+
+
+![Events Video](https://user-images.githubusercontent.com/74729605/114311567-ee9b4c80-9b0c-11eb-8a6c-ce5f0e9775c5.jpeg)
 
 ## Posts
 
