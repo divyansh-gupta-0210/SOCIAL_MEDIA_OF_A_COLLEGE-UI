@@ -14,7 +14,7 @@ If a person likes the event he would swipe it right, and a new page stating abou
 Similarly if the student doesn't like the event he would left swipe it and and next event would appear as a card.
 
 
-![Events Video](https://user-images.githubusercontent.com/74729605/114311567-ee9b4c80-9b0c-11eb-8a6c-ce5f0e9775c5.jpeg)
+![Events Video UI](https://user-images.githubusercontent.com/74729605/114311629-24403580-9b0d-11eb-8f6b-0d87d01e9fac.mp4)
 
 ## Posts
 
@@ -22,11 +22,16 @@ Each and every club can have a account here where they can post the work done by
 This can be like Instagram.
 It also has a feature of messaging the PR person of the club to know more about it.
 
+![Posts UI](https://user-images.githubusercontent.com/74729605/114311769-a892b880-9b0d-11eb-8b51-fc2cfda725b2.jpeg)
+
 ## Clubs
 
 Each and every club can give its details here, with their verticals and the names of the members along with this we also provide the messaging system to DM the PR person here as well.
 This can be taken as a Netflix UI.
 As when click on a particular club it's Moto, it's previous events and the other verticals would appear.
+
+![Clubs Video UI](https://user-images.githubusercontent.com/74729605/114311687-5c477880-9b0d-11eb-9089-f928a08e1538.mp4)
+
 
 ## Dependencies
 
@@ -48,3 +53,6 @@ As when click on a particular club it's Moto, it's previous events and the other
 - Have the users account inside it
 - Link it with college website
 - Get all the events organised by a particular club
+
+![Messaging UI](https://user-images.githubusercontent.com/74729605/114311795-ccee9500-9b0d-11eb-88b6-b80a3fe981a8.jpeg)
+
