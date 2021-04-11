@@ -4,6 +4,7 @@ This app has the UI, that every college should have to show to there students.
 It has 3 tabs at the TOP. And each tab signifes the working of a college's student life. Froms the details of the clubs to the details of every event done by the clubs of the college.
 Every aspect is mentioned clearly below.
 
+
 ## Events
 
 Every college has hundreds of clubs and all those clubs organise many events. So in order to track each and every event and, have a good publicity and a reach. 
